@@ -16,7 +16,7 @@ jobs:
 
       - run: npm ci            # install deps from package.json
 
-      - run: node standup-typing.js
+      - run: node standupTyping.js
         env:                   # pull secrets from repo settings
           SLACK_TOKEN:  ${{ secrets.SLACK_TOKEN }}
           OPENAI_KEY:   ${{ secrets.OPENAI_KEY }}
