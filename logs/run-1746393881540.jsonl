@@ -1,0 +1,6 @@
+{"msg":"Log started","ts":"2025-05-04T21:24:41.540Z"}
+{"ts":"2025-05-04T21:24:42.417Z","msg":"Run started","jql":"project = SCRUM AND status = \"REFINING\""}
+{"ts":"2025-05-04T21:24:42.419Z","msg":"Issues fetched","count":1}
+{"ts":"2025-05-04T21:24:44.812Z","issue":"SCRUM-1","status":"ERROR_400","errorMessage":"Request failed with status code 400","jiraDetails":{"errorMessages":[],"errors":{"comment":"Comment body is not valid!"}}}
+{"ts":"2025-05-04T21:24:44.813Z","issue":"SCRUM-1","status":"ERROR_400","promptChars":430,"completionChars":531}
+{"ts":"2025-05-04T21:24:44.813Z","msg":"Run summary","processed":0,"skipped":0,"errors":2}

@@ -1,0 +1,6 @@
+{"msg":"Log started","ts":"2025-05-04T21:35:50.776Z"}
+{"ts":"2025-05-04T21:35:51.493Z","msg":"Run started","jql":"project = SCRUM AND status = \"REFINING\""}
+{"ts":"2025-05-04T21:35:51.494Z","msg":"Issues fetched","count":1}
+{"ts":"2025-05-04T21:35:53.658Z","issue":"SCRUM-1","status":"ERROR_400","errorMessage":"Request failed with status code 400","jiraDetails":{"errorMessages":[],"errors":{"description":"Operation value must be an Atlassian Document (see the Atlassian Document Format)"}}}
+{"ts":"2025-05-04T21:35:53.659Z","issue":"SCRUM-1","status":"ERROR_400","promptChars":430,"completionChars":326}
+{"ts":"2025-05-04T21:35:53.661Z","msg":"Run summary","processed":0,"skipped":0,"errors":2}

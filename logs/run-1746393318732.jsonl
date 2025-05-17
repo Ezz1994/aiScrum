@@ -1,0 +1,3 @@
+{"msg":"Log started","ts":"2025-05-04T21:15:18.732Z"}
+{"ts":"2025-05-04T21:15:18.735Z","msg":"Run started","jql":"project = SCRUM AND status = \"REFINING\""}
+{"ts":"2025-05-04T21:15:18.742Z","msg":"Run failed","error":"issues is not defined"}
