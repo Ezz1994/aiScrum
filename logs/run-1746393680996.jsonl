@@ -1,0 +1,5 @@
+{"msg":"Log started","ts":"2025-05-04T21:21:20.996Z"}
+{"ts":"2025-05-04T21:21:22.542Z","msg":"Run started","jql":"project = SCRUM AND status = \"REFINING\""}
+{"ts":"2025-05-04T21:21:22.544Z","msg":"Issues fetched","count":1}
+{"ts":"2025-05-04T21:21:25.663Z","issue":"SCRUM-1","status":"ERROR: Request failed with status code 400","promptChars":430,"completionChars":575}
+{"ts":"2025-05-04T21:21:25.664Z","msg":"Run summary","processed":0,"skipped":0,"errors":1}

@@ -1,0 +1,21 @@
+name: Stand-Up Digest (Recording)
+
+on:
+  schedule:
+    # Runs every weekday at 10:00, 10:05, 10:10 Amman to wait for transcript
+    - cron: "0,5,10 7 * * 1-5" # 07:00 UTC = 10:00 local
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: node standup-recording.js
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          POST_CHANNEL: ${{ secrets.POST_CHANNEL }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }} 

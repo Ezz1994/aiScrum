@@ -1,0 +1,5 @@
+{"msg":"Log started","ts":"2025-05-04T21:40:05.344Z"}
+{"ts":"2025-05-04T21:40:06.238Z","msg":"Run started","jql":"project = SCRUM AND status = \"REFINING\""}
+{"ts":"2025-05-04T21:40:06.240Z","msg":"Issues fetched","count":1}
+{"ts":"2025-05-04T21:40:08.786Z","issue":"SCRUM-1","status":"OK","promptChars":430,"completionChars":527}
+{"ts":"2025-05-04T21:40:08.787Z","msg":"Run summary","processed":1,"skipped":0,"errors":0}

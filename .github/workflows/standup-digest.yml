@@ -1,0 +1,24 @@
+name: Stand-Up Digest
+
+on:
+  # 09:45 Asia/Amman = 06:45 UTC
+  schedule:
+    - cron:  '45 6 * * 1-5'
+
+  # manual “Run Workflow” button for quick testing
+  workflow_dispatch:
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest     # GitHub’s free VM
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: npm ci            # install deps from package.json
+
+      - run: node standupTyping.js
+        env:                   # pull secrets from repo settings
+          SLACK_TOKEN:  ${{ secrets.SLACK_TOKEN }}
+          OPENAI_KEY:   ${{ secrets.OPENAI_KEY }}
+          PREP_CHANNEL: ${{ secrets.PREP_CHANNEL }}
+          POST_CHANNEL: ${{ secrets.POST_CHANNEL }}
